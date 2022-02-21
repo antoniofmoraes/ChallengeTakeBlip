@@ -1,1 +1,1 @@
-web: node API/server -p $PORT
+web: node API/server -p 3000
