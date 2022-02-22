@@ -1,1 +1,0 @@
-web: node API/server -p $PORT
