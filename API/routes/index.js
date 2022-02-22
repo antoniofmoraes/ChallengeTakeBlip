@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
       const sortedRepositories = filteredRepositories.sort((x) => x.created_at);
       const firstFiveRepositories = sortedRepositories.slice(0, 5);
 
-      res.j(firstFiveRepositories);
+      res.send(firstFiveRepositories);
     })
     .catch((err) => {
       if (err.response.status === 403) {
